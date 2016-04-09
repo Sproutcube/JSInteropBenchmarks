@@ -1,0 +1,388 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		586AF9FD1CB882750000FC5A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586AF9FC1CB882750000FC5A /* AppDelegate.swift */; };
+		586AF9FF1CB882750000FC5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 586AF9FE1CB882750000FC5A /* Assets.xcassets */; };
+		586AFA021CB882750000FC5A /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 586AFA001CB882750000FC5A /* MainMenu.xib */; };
+		586AFA0D1CB882760000FC5A /* JSContextBenchmarksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586AFA0C1CB882760000FC5A /* JSContextBenchmarksTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		586AFA091CB882760000FC5A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 586AF9F11CB882750000FC5A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 586AF9F81CB882750000FC5A;
+			remoteInfo = JSInteropBenchmarks;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		586AF9F91CB882750000FC5A /* JSInteropBenchmarks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JSInteropBenchmarks.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		586AF9FC1CB882750000FC5A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		586AF9FE1CB882750000FC5A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		586AFA011CB882750000FC5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		586AFA031CB882750000FC5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		586AFA081CB882760000FC5A /* JSInteropBenchmarksTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JSInteropBenchmarksTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		586AFA0C1CB882760000FC5A /* JSContextBenchmarksTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSContextBenchmarksTests.swift; sourceTree = "<group>"; };
+		586AFA0E1CB882760000FC5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		586AF9F61CB882750000FC5A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		586AFA051CB882760000FC5A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		586AF9F01CB882750000FC5A = {
+			isa = PBXGroup;
+			children = (
+				586AF9FB1CB882750000FC5A /* JSInteropBenchmarks */,
+				586AFA0B1CB882760000FC5A /* JSInteropBenchmarksTests */,
+				586AF9FA1CB882750000FC5A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		586AF9FA1CB882750000FC5A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				586AF9F91CB882750000FC5A /* JSInteropBenchmarks.app */,
+				586AFA081CB882760000FC5A /* JSInteropBenchmarksTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		586AF9FB1CB882750000FC5A /* JSInteropBenchmarks */ = {
+			isa = PBXGroup;
+			children = (
+				586AF9FC1CB882750000FC5A /* AppDelegate.swift */,
+				586AF9FE1CB882750000FC5A /* Assets.xcassets */,
+				586AFA001CB882750000FC5A /* MainMenu.xib */,
+				586AFA031CB882750000FC5A /* Info.plist */,
+			);
+			path = JSInteropBenchmarks;
+			sourceTree = "<group>";
+		};
+		586AFA0B1CB882760000FC5A /* JSInteropBenchmarksTests */ = {
+			isa = PBXGroup;
+			children = (
+				586AFA0C1CB882760000FC5A /* JSContextBenchmarksTests.swift */,
+				586AFA0E1CB882760000FC5A /* Info.plist */,
+			);
+			path = JSInteropBenchmarksTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		586AF9F81CB882750000FC5A /* JSInteropBenchmarks */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 586AFA111CB882760000FC5A /* Build configuration list for PBXNativeTarget "JSInteropBenchmarks" */;
+			buildPhases = (
+				586AF9F51CB882750000FC5A /* Sources */,
+				586AF9F61CB882750000FC5A /* Frameworks */,
+				586AF9F71CB882750000FC5A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JSInteropBenchmarks;
+			productName = JSInteropBenchmarks;
+			productReference = 586AF9F91CB882750000FC5A /* JSInteropBenchmarks.app */;
+			productType = "com.apple.product-type.application";
+		};
+		586AFA071CB882760000FC5A /* JSInteropBenchmarksTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 586AFA141CB882760000FC5A /* Build configuration list for PBXNativeTarget "JSInteropBenchmarksTests" */;
+			buildPhases = (
+				586AFA041CB882760000FC5A /* Sources */,
+				586AFA051CB882760000FC5A /* Frameworks */,
+				586AFA061CB882760000FC5A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				586AFA0A1CB882760000FC5A /* PBXTargetDependency */,
+			);
+			name = JSInteropBenchmarksTests;
+			productName = JSInteropBenchmarksTests;
+			productReference = 586AFA081CB882760000FC5A /* JSInteropBenchmarksTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		586AF9F11CB882750000FC5A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = Sproutcube;
+				TargetAttributes = {
+					586AF9F81CB882750000FC5A = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					586AFA071CB882760000FC5A = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 586AF9F81CB882750000FC5A;
+					};
+				};
+			};
+			buildConfigurationList = 586AF9F41CB882750000FC5A /* Build configuration list for PBXProject "JSInteropBenchmarks" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 586AF9F01CB882750000FC5A;
+			productRefGroup = 586AF9FA1CB882750000FC5A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				586AF9F81CB882750000FC5A /* JSInteropBenchmarks */,
+				586AFA071CB882760000FC5A /* JSInteropBenchmarksTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		586AF9F71CB882750000FC5A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				586AF9FF1CB882750000FC5A /* Assets.xcassets in Resources */,
+				586AFA021CB882750000FC5A /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		586AFA061CB882760000FC5A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		586AF9F51CB882750000FC5A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				586AF9FD1CB882750000FC5A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		586AFA041CB882760000FC5A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				586AFA0D1CB882760000FC5A /* JSContextBenchmarksTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		586AFA0A1CB882760000FC5A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 586AF9F81CB882750000FC5A /* JSInteropBenchmarks */;
+			targetProxy = 586AFA091CB882760000FC5A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		586AFA001CB882750000FC5A /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				586AFA011CB882750000FC5A /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		586AFA0F1CB882760000FC5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		586AFA101CB882760000FC5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		586AFA121CB882760000FC5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = JSInteropBenchmarks/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sproutcube.JSInteropBenchmarks;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		586AFA131CB882760000FC5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = JSInteropBenchmarks/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sproutcube.JSInteropBenchmarks;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		586AFA151CB882760000FC5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = JSInteropBenchmarksTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sproutcube.JSInteropBenchmarksTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JSInteropBenchmarks.app/Contents/MacOS/JSInteropBenchmarks";
+			};
+			name = Debug;
+		};
+		586AFA161CB882760000FC5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = JSInteropBenchmarksTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sproutcube.JSInteropBenchmarksTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JSInteropBenchmarks.app/Contents/MacOS/JSInteropBenchmarks";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		586AF9F41CB882750000FC5A /* Build configuration list for PBXProject "JSInteropBenchmarks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				586AFA0F1CB882760000FC5A /* Debug */,
+				586AFA101CB882760000FC5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		586AFA111CB882760000FC5A /* Build configuration list for PBXNativeTarget "JSInteropBenchmarks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				586AFA121CB882760000FC5A /* Debug */,
+				586AFA131CB882760000FC5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		586AFA141CB882760000FC5A /* Build configuration list for PBXNativeTarget "JSInteropBenchmarksTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				586AFA151CB882760000FC5A /* Debug */,
+				586AFA161CB882760000FC5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 586AF9F11CB882750000FC5A /* Project object */;
+}
