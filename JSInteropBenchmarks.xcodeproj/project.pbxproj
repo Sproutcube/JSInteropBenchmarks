@@ -11,6 +11,7 @@
 		586AF9FF1CB882750000FC5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 586AF9FE1CB882750000FC5A /* Assets.xcassets */; };
 		586AFA021CB882750000FC5A /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 586AFA001CB882750000FC5A /* MainMenu.xib */; };
 		586AFA0D1CB882760000FC5A /* JSContextBenchmarksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586AFA0C1CB882760000FC5A /* JSContextBenchmarksTests.swift */; };
+		5D8C19231CBE519E005D2FFF /* WKWebviewBenchmarksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8C19221CBE519E005D2FFF /* WKWebviewBenchmarksTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +33,7 @@
 		586AFA081CB882760000FC5A /* JSInteropBenchmarksTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JSInteropBenchmarksTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		586AFA0C1CB882760000FC5A /* JSContextBenchmarksTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSContextBenchmarksTests.swift; sourceTree = "<group>"; };
 		586AFA0E1CB882760000FC5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5D8C19221CBE519E005D2FFF /* WKWebviewBenchmarksTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WKWebviewBenchmarksTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				586AFA0C1CB882760000FC5A /* JSContextBenchmarksTests.swift */,
+				5D8C19221CBE519E005D2FFF /* WKWebviewBenchmarksTests.swift */,
 				586AFA0E1CB882760000FC5A /* Info.plist */,
 			);
 			path = JSInteropBenchmarksTests;
@@ -199,6 +202,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				586AFA0D1CB882760000FC5A /* JSContextBenchmarksTests.swift in Sources */,
+				5D8C19231CBE519E005D2FFF /* WKWebviewBenchmarksTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,6 +377,7 @@
 				586AFA131CB882760000FC5A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		586AFA141CB882760000FC5A /* Build configuration list for PBXNativeTarget "JSInteropBenchmarksTests" */ = {
 			isa = XCConfigurationList;
@@ -381,6 +386,7 @@
 				586AFA161CB882760000FC5A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
