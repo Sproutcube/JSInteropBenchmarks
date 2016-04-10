@@ -14,15 +14,18 @@ import WebKit
     var value : String { get set }
     
     func getString(string: String) -> AnyObject
+    
+    static func doNothing()
     static func getString(string: String) -> AnyObject
-    
+    static func twoArgs(a: String, _ b: String) -> String
     static func getObject() -> ElementJSExports
-    
     static func allTheData() -> [[String: String]]
+    static func throwException() -> Int
 }
 
 @objc class ElementJS : NSObject, ElementJSExports {
     dynamic var value : String
+    
     static let data = [[String: String]](count: 1000, repeatedValue: ["foo": "bar"])
     
     init (value: String) {
@@ -31,6 +34,14 @@ import WebKit
     
     func getString(string: String) -> AnyObject {
         return string
+    }
+    
+    class func doNothing() {
+        
+    }
+    
+    class func twoArgs(a: String, _ b: String) -> String {
+        return a + b
     }
     
     class func getString(name: String) -> AnyObject {
@@ -44,6 +55,11 @@ import WebKit
     
     class func allTheData() -> [[String : String]] {
         return data
+    }
+
+    class func throwException() -> Int {
+        JSContext.currentContext().exception = JSValue(newErrorFromMessage: "bad", inContext: JSContext.currentContext())
+        return 0
     }
 }
 
@@ -100,12 +116,30 @@ class JSContextBenchmarksTests: XCTestCase {
             }
         }
     }
+    
+    func testStaticFuncExportCall() {
+        context.setObject(ElementJS.self, forKeyedSubscript: "ElementJS")
+        self.measureBlock { () -> Void in
+            self.go {
+                self.context.evaluateScript("ElementJS.doNothing()")
+            }
+        }
+    }
 
     func testStaticFuncExportCallScalarReturn() {
         context.setObject(ElementJS.self, forKeyedSubscript: "ElementJS")
         self.measureBlock { () -> Void in
             self.go {
                 self.context.evaluateScript("ElementJS.getString('foo')")
+            }
+        }
+    }
+    
+    func testStaticFuncExportCallTwoArgsScalarReturn() {
+        context.setObject(ElementJS.self, forKeyedSubscript: "ElementJS")
+        self.measureBlock { () -> Void in
+            self.go {
+                self.context.evaluateScript("ElementJS.twoArgs('foo', 'bar')")
             }
         }
     }
@@ -137,5 +171,13 @@ class JSContextBenchmarksTests: XCTestCase {
         }
     }
 
+    func testStaticFuncExportCallThrow() {
+        context.setObject(ElementJS.self, forKeyedSubscript: "ElementJS")
+        self.measureBlock { () -> Void in
+            self.go {
+                self.context.evaluateScript("try { ElementJS.throwException() } catch (ex) { ex }")
+            }
+        }
+    }
 }
 
